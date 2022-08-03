@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/*==========Google Fonts==========*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*==========Reset CSS==========*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*==========Conteúdo==========*/
+.conteudo {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #10101C, #3E7BEB);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*==========Circulos==========*/
+.circulo1, .circulo2 {
+    background: white;
+    background-image: linear-gradient(to bottom,#4e00c2, #3c67e3 43%, #5ddcff);
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1000px 50px #5ddcff;
+}
+.circulo1 {
+    top: 5%;
+    right: 25%;
+}
+
+.circulo2 {
+    bottom: 5%;
+    left: 25%;
+}
+
+/*==========Card==========*/
+.card {
+    width: 90%;
+    max-width: 440px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: none;
+    background: rgba(255, 255, 255, 0.075);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+.card img {
+    width: 140px;
+    border-radius: 50%;
+}
+.card h2 {
+    font-family: 'Nunito';
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.card p {
+    font-family: 'Nunito';
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+    color: #fff;
+    font-weight: 300;
+}
+
+/*==========Redes Sociais==========*/
+.links .img {
+    font-size: 25px;
+    color: #fff;
+    margin: 10px 5px;
+    transition: color 0.5s;
+    margin-left: 30px;
+
+}
+.img:hover {
+    color: #4e00c2;
+}
+
+/*==========Botão==========*/
+.btn {
+    display: inline-block;
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: .2rem;
+    background: #3c67e3;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0  10px;
+    transition:all 1s ease;
+}
+.btn:hover {
+    background: #4e00c2;
+    transition: all 1s ease;
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 768px) {
+    .circulo1 {
+        top: -10%;
+        right: -10%;
+    }
+    
+    .circulo2 {
+        bottom: -10%;
+        left: -10%;
+    }
+}
